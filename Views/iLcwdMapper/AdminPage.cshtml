@@ -1,0 +1,49 @@
+@model List<Processor>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ADMIN PAGE</h1>
+<a asp-action="Dashboard" asp-controller="iLcwdMapper" class="btn btn-warning" >HOME</a>
+<a asp-action="new" asp-controller="iLcwdMapper" class="btn btn-warning">Add Processor</a>
+<a asp-action="LogOut" asp-controller="Home" class="btn btn-warning" >LOGOUT</a>
+<div id="ProcessorListBack">
+    <div id="ProcessorList">
+        <table class="table table-hover table-striped table-dark">
+            <thead>
+                <tr>
+                <th>Processor</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>County</th>
+                <th>Lat/Long</th>
+                <th>Info</th>
+                <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(var w in @Model)
+                {
+                    <tr>
+                        <td>@w.ProcessorName</td>
+                        <td>@w.ProcessorAddress</td>
+                        <td>@w.ProcessorCity, IL</td>
+                        <td>@w.ProcessorCounty County</td>
+                        <td>@w.LAT, @w.LNG</td>
+                        <td>@w.ProcessorHours</td>
+                        <td>
+                        <a asp-action="destroy" asp-controller="iLcwdMapper" asp-route-ProcessorId="@w.ProcessorId">DELETE</a>
+                        <a asp-action="edit" asp-controller="iLcwdMapper" asp-route-ProcessorId="@w.ProcessorId">EDIT</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

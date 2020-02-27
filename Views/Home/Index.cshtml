@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Splashpage</title>
+    <style>
+    h1{
+        color: lightgrey;
+        padding: 1%;
+        margin: 1%;
+        text-align: center;
+        font-size: 30pt;
+    }
+    h4 {
+        color: lightgrey;
+        padding: 1%;
+        margin: 1%;
+        text-align: center;
+        font-size: 18pt;
+        }
+
+
+        #InfoDiv {
+            background-color: #343a40;
+            padding: 1%;
+            margin: 5%;
+            opacity: .9;
+            overflow: hidden;
+            border-radius: 4px;
+        }
+
+        #Info {
+        margin: auto;
+        width: 85%;
+        text-align: justify;
+        padding: 5px;
+        padding-bottom: 15px;
+        }
+      html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: lightgray;
+        background-repeat: repeat-y;
+        background-size: 100%;
+        background-image: url("https://doc-0s-6k-docs.googleusercontent.com/docs/securesc/4be0t3skmqrc5mhq907krk80tcdtg8pc/pnciop467scjo30m6830hu44lh6l1706/1582141500000/00954405103855727212/00954405103855727212/16NzF4qqJqZKpM5dn6D2NVlYaOiwnI7l8?authuser=0");
+    }
+    
+    #button {
+        align-items: center;
+        opacity: .75;
+    }
+    #button:hover {
+        opacity: .9;
+    }
+    #SplashImg {
+        height: 400px;
+    }
+    </style>
+
+</head>
+<body>
+<div id="InfoDiv">
+<h1>IL CWD Hunter Helper</h1>
+
+<h4 id="Info">Welcome to Il CWD Hunter Helper! This website features a Google map to help deer hunters find their nearest wild game processor that ALSO conducts CWD testing.</h4>
+</div>
+
+
+<a asp-action="EnterSplash" class="btn btn-dark btn-block" asp-controller="Home" id="button">ENTER</a>
+
+
+</body>

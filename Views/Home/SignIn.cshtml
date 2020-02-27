@@ -1,0 +1,17 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model LoginUser
+
+<h2>Admin Login</h2>
+<a asp-action="Dashboard" asp-controller="iLcwdMapper" class="btn btn-warning" >HOME</a>
+<a asp-action="LogOut" asp-controller="Home" class="btn btn-warning" >LOGOUT</a>
+<a asp-action="Register" asp-controller="Home" class="btn btn-warning" >REGISTER</a>
+<div asp-validation-summary="All" class="text-danger"></div>
+<form asp-action="LogIn" asp-controller="Home" method="post">
+    <label asp-for="LoginEmail"></label>
+    <input asp-for="LoginEmail"><br>
+    <label asp-for="LoginPassword"></label>
+    <input asp-for="LoginPassword"><br>
+    <input type="Submit" value="LogIn" class="btn btn-danger">
+</form>
