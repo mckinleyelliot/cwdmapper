@@ -38,31 +38,31 @@ namespace iLcwdMapper.Controllers
             return View("Register");
         }
 
-        [HttpPost("register")]
-        public IActionResult Register(User register)
-        {
-            if(ModelState.IsValid)
-            {
-                if(dbContext.Users.Any(u => u.Email == register.Email))
-                {
-                    ModelState.AddModelError("Email", "That email is already in use!");
-                    return View("Register");
-                }
-                else
-                {
-                    PasswordHasher<User> Hasher = new PasswordHasher<User>();
-                    register.Password = Hasher.HashPassword(register, register.Password);
-                    dbContext.Users.Add(register);
-                    dbContext.SaveChanges();
-                    HttpContext.Session.SetString("UserEmail", register.Email);
-                    return RedirectToAction("Signin");
-                }
-            }
-            else
-            {
-                return View("SignIn");
-            }
-        }
+        // [HttpPost("register")]
+        // public IActionResult Register(User register)
+        // {
+        //     if(ModelState.IsValid)
+        //     {
+        //         if(dbContext.Users.Any(u => u.Email == register.Email))
+        //         {
+        //             ModelState.AddModelError("Email", "That email is already in use!");
+        //             return View("Register");
+        //         }
+        //         else
+        //         {
+        //             PasswordHasher<User> Hasher = new PasswordHasher<User>();
+        //             register.Password = Hasher.HashPassword(register, register.Password);
+        //             dbContext.Users.Add(register);
+        //             dbContext.SaveChanges();
+        //             HttpContext.Session.SetString("UserEmail", register.Email);
+        //             return RedirectToAction("Signin");
+        //         }
+        //     }
+        //     else
+        //     {
+        //         return View("SignIn");
+        //     }
+        // }
 
         [HttpPost("login")]
         public IActionResult LogIn(LoginUser login)
