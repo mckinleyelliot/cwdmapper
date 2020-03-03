@@ -26,7 +26,7 @@ namespace iLcwdMapper
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddDbContext<HomeContext>(options => options.UseMySql(Configuration["DbInfo:ConnectionString"]));
+            services.AddDbContext<HomeContext>(options => options.UseSqlServer(Configuration["DbInfo:ConnectionString"]));
             services.AddSession();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
