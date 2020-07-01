@@ -379,8 +379,8 @@ function myFunction() {
           }, function() {
             handleLocationError(true, infoWindow, map.getCenter());
           });
-
-        } else { // If Browser doesn't support Geolocation
+        } 
+        else { // If Browser doesn't support Geolocation
           handleLocationError(false, infoWindow, map.getCenter());
         }
         var infowin = new google.maps.InfoWindow();

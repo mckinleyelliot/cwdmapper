@@ -1,5 +1,5 @@
 {
-  "FilePath": "/Users/elliotmckinley/Desktop/ilcwdmapper/LoginReg.csproj",
+  "FilePath": "/Users/elliotmckinley/Desktop/ilcwdmapper NOUSERS/LoginReg.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-2.1",
     "LanguageVersion": "2.1",
@@ -2961,73 +2961,73 @@
   "RootNamespace": "LoginReg",
   "Documents": [
     {
-      "FilePath": "/Users/elliotmckinley/Desktop/ilcwdmapper/Views/Shared/_Layout.cshtml",
-      "TargetPath": "Views/Shared/_Layout.cshtml",
+      "FilePath": "/Users/elliotmckinley/Desktop/ilcwdmapper NOUSERS/Views/iLcwdMapper/New.cshtml",
+      "TargetPath": "Views\\iLcwdMapper\\New.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/elliotmckinley/Desktop/ilcwdmapper/Views/Home/Privacy.cshtml",
-      "TargetPath": "Views/Home/Privacy.cshtml",
+      "FilePath": "/Users/elliotmckinley/Desktop/ilcwdmapper NOUSERS/Views/Shared/Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/elliotmckinley/Desktop/ilcwdmapper/Views/iLcwdMapper/Edit.cshtml",
-      "TargetPath": "Views/iLcwdMapper/Edit.cshtml",
+      "FilePath": "/Users/elliotmckinley/Desktop/ilcwdmapper NOUSERS/Views/Home/SignIn.cshtml",
+      "TargetPath": "Views\\Home\\SignIn.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/elliotmckinley/Desktop/ilcwdmapper/Views/Shared/_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views/Shared/_ValidationScriptsPartial.cshtml",
+      "FilePath": "/Users/elliotmckinley/Desktop/ilcwdmapper NOUSERS/Views/Home/Register.cshtml",
+      "TargetPath": "Views\\Home\\Register.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/elliotmckinley/Desktop/ilcwdmapper/Views/_ViewStart.cshtml",
-      "TargetPath": "Views/_ViewStart.cshtml",
+      "FilePath": "/Users/elliotmckinley/Desktop/ilcwdmapper NOUSERS/Views/Home/Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/elliotmckinley/Desktop/ilcwdmapper/Views/Shared/_CookieConsentPartial.cshtml",
-      "TargetPath": "Views/Shared/_CookieConsentPartial.cshtml",
+      "FilePath": "/Users/elliotmckinley/Desktop/ilcwdmapper NOUSERS/Views/_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/elliotmckinley/Desktop/ilcwdmapper/Views/iLcwdMapper/AdminPage.cshtml",
-      "TargetPath": "Views/iLcwdMapper/AdminPage.cshtml",
+      "FilePath": "/Users/elliotmckinley/Desktop/ilcwdmapper NOUSERS/Views/Shared/_CookieConsentPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_CookieConsentPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/elliotmckinley/Desktop/ilcwdmapper/Views/iLcwdMapper/New.cshtml",
-      "TargetPath": "Views/iLcwdMapper/New.cshtml",
+      "FilePath": "/Users/elliotmckinley/Desktop/ilcwdmapper NOUSERS/Views/Home/Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/elliotmckinley/Desktop/ilcwdmapper/Views/Home/Index.cshtml",
-      "TargetPath": "Views/Home/Index.cshtml",
+      "FilePath": "/Users/elliotmckinley/Desktop/ilcwdmapper NOUSERS/Views/iLcwdMapper/Edit.cshtml",
+      "TargetPath": "Views\\iLcwdMapper\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/elliotmckinley/Desktop/ilcwdmapper/Views/Shared/Error.cshtml",
-      "TargetPath": "Views/Shared/Error.cshtml",
+      "FilePath": "/Users/elliotmckinley/Desktop/ilcwdmapper NOUSERS/Views/Shared/_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/elliotmckinley/Desktop/ilcwdmapper/Views/Home/Register.cshtml",
-      "TargetPath": "Views/Home/Register.cshtml",
+      "FilePath": "/Users/elliotmckinley/Desktop/ilcwdmapper NOUSERS/Views/Shared/_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/elliotmckinley/Desktop/ilcwdmapper/Views/iLcwdMapper/Dashboard.cshtml",
-      "TargetPath": "Views/iLcwdMapper/Dashboard.cshtml",
+      "FilePath": "/Users/elliotmckinley/Desktop/ilcwdmapper NOUSERS/Views/iLcwdMapper/Dashboard.cshtml",
+      "TargetPath": "Views\\iLcwdMapper\\Dashboard.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/elliotmckinley/Desktop/ilcwdmapper/Views/Home/SignIn.cshtml",
-      "TargetPath": "Views/Home/SignIn.cshtml",
+      "FilePath": "/Users/elliotmckinley/Desktop/ilcwdmapper NOUSERS/Views/iLcwdMapper/AdminPage.cshtml",
+      "TargetPath": "Views\\iLcwdMapper\\AdminPage.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/elliotmckinley/Desktop/ilcwdmapper/Views/_ViewImports.cshtml",
-      "TargetPath": "Views/_ViewImports.cshtml",
+      "FilePath": "/Users/elliotmckinley/Desktop/ilcwdmapper NOUSERS/Views/_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     }
   ],

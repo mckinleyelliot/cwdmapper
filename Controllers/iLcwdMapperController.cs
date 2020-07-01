@@ -36,55 +36,35 @@ namespace iLcwdMapper.Controllers
         [HttpGet("new")]
         public IActionResult New()
         {
-            if(HttpContext.Session.GetString("UserEmail") == null)
-            {
-                return RedirectToAction("LogOut", "Home");
-            }
-            else
-            {
+
             return View();
-            }
+            
         }
 
         [HttpGet("destroy/{ProcessorId}")]
         public IActionResult Destroy (int ProcessorId)
         {
-            if(HttpContext.Session.GetString("UserEmail") == null)
-            {
-                return RedirectToAction("LogOut", "Home");
-            }
-            else 
-            {
+
             Processor remove = dbContext.Processors.FirstOrDefault(w => w.ProcessorId == ProcessorId);
             dbContext.Processors.Remove(remove);
             dbContext.SaveChanges();
             return RedirectToAction("Dashboard");
-            }
+            
         }
 
         [HttpGet("edit/{ProcessorId}")]
         public IActionResult Edit(int ProcessorId)
         {
-            if(HttpContext.Session.GetString("UserEmail") == null)
-            {
-                return RedirectToAction("LogOut", "Home");
-            }
-            else
-            {
+
             Processor RetrievedProcessor = dbContext.Processors.FirstOrDefault(p => p.ProcessorId == ProcessorId);
             return View("Edit", RetrievedProcessor);
-            }
+            
         }
 
         [HttpPost("edit/{ProcessorId}")]
         public IActionResult Editit(int ProcessorId, Processor ND)
         {
-            if(HttpContext.Session.GetString("UserEmail") == null)
-            {
-                return RedirectToAction("LogOut", "Home");
-            }
-            else
-            {
+
             if(ModelState.IsValid)
             {
                 Processor EditProcessor = dbContext.Processors.FirstOrDefault(p => p.ProcessorId == ProcessorId);
@@ -125,7 +105,7 @@ namespace iLcwdMapper.Controllers
                 Processor EditProcessor = dbContext.Processors.FirstOrDefault(p => p.ProcessorId == ProcessorId);
                 return View ("Edit", EditProcessor);
             }
-        }
+        
     }
 
 
@@ -133,12 +113,7 @@ namespace iLcwdMapper.Controllers
         [HttpPost("create")]
         public IActionResult Create(Processor processor)
         {
-            if(HttpContext.Session.GetString("UserEmail") == null)
-            {
-                return RedirectToAction("LogOut", "Home");
-            }
-            else
-            {
+
                 if(ModelState.IsValid)
                 {
                     dbContext.Processors.Add(processor);
@@ -150,20 +125,16 @@ namespace iLcwdMapper.Controllers
                 {
                     return View("New");
                 }
-            }
+            
         }
 
         [HttpGet("AdminPage")]
         public IActionResult AdminPage()
         {
-            if(HttpContext.Session.GetString("UserEmail") == null)
-            {
-                return RedirectToAction("LogOut", "Home");
-            }
-            else{
+
                 List<Processor> AllProcessors = dbContext.Processors.ToList();
                 return View(AllProcessors);
-            }
+            
         }
 
 
