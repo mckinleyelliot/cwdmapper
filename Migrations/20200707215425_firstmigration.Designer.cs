@@ -9,8 +9,8 @@ using iLcwdMapper.Models;
 namespace LoginReg.Migrations
 {
     [DbContext(typeof(HomeContext))]
-    [Migration("20200205201757_secondmigration")]
-    partial class secondmigration
+    [Migration("20200707215425_firstmigration")]
+    partial class firstmigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

@@ -12374,11 +12374,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/elliotmckinley/Desktop/ilcwdmapper/LoginReg.csproj",
+      "projectUniqueName": "/Users/elliotmckinley/Desktop/ilcwdmapper NOUSERS/LoginReg.csproj",
       "projectName": "LoginReg",
-      "projectPath": "/Users/elliotmckinley/Desktop/ilcwdmapper/LoginReg.csproj",
+      "projectPath": "/Users/elliotmckinley/Desktop/ilcwdmapper NOUSERS/LoginReg.csproj",
       "packagesPath": "/Users/elliotmckinley/.nuget/packages/",
-      "outputPath": "/Users/elliotmckinley/Desktop/ilcwdmapper/obj/",
+      "outputPath": "/Users/elliotmckinley/Desktop/ilcwdmapper NOUSERS/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
